@@ -4,43 +4,79 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacy Policy - Tree of Moments</title>
+  <meta name="description" content="Privacy Policy for Tree of Moments (一树时光) for iPhone.">
   <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="site-header__inner">
       <a class="brand" href="../index.html">Tree of Moments</a>
-      <nav class="language-nav" aria-label="Language and document navigation">
-        <a href="terms.html">Terms</a><a href="../zh/privacy.html">中文</a>
+      <nav class="language-nav" aria-label="Document and language navigation">
+        <a href="privacy.html" aria-current="page">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="support.html">Support</a>
+        <a href="../zh/privacy.html" lang="zh-Hans">中文</a>
       </nav>
     </div>
   </header>
-  <main class="document">
+  <main class="document" id="main">
     <h1>Privacy Policy</h1>
-    <p class="effective-date">Effective date: 2026-08-14</p>
-    <p>This Privacy Policy explains how Tree of Moments handles information when you use the app.</p>
+    <p class="effective-date">Effective date: 2026-10-21</p>
 
-    <h2>Information we do not collect</h2>
-    <p>Tree of Moments has no account system and uses no analytics SDK, advertising SDK, behavioral tracking, or cross-app tracking. We do not sell personal information. There are no analytics services in the app.</p>
+    <div class="notice">
+      <p><strong>In short:</strong> Tree of Moments has no account, no analytics, no advertising, no tracking. The app is built with the Cocos Creator engine, but includes no analytics, advertising or tracking SDKs. The developer does not collect personal data. Your settings stay on your iPhone. If you turn on local weather, iOS sends an approximate location to Apple Weather to get current conditions; the developer never receives it.</p>
+    </div>
 
-    <h2>Information stored on your device</h2>
-    <p>Your tree parameters, growth state, sound settings, language, event preferences, and other app preferences remain in local storage on your device. The developer does not receive this data. Deleting the app removes these local settings, subject to normal device backup behavior controlled by your operating system.</p>
+    <p>This policy explains how Tree of Moments (Chinese name 一树时光, "the app") handles information. The app is made by Yue Qiu, an individual developer ("we", "us").</p>
 
-    <h2>Location and local weather</h2>
-    <p>If you choose local weather, the app requests precise location only after asking for your permission. Your location is sent to QWeather solely to obtain weather data for your area. The developer does not retain your location. If you deny location permission, the app remains usable with manual or default weather.</p>
+    <h2>What we do not collect</h2>
+    <ul>
+      <li>We do not run servers for the app and do not receive any data from it.</li>
+      <li>There is no sign-up, login or account.</li>
+      <li>The app is built with the third-party Cocos Creator engine. It includes no analytics, crash-reporting, advertising, attribution or tracking SDKs.</li>
+      <li>We do not track you across apps or websites, and we do not sell or share personal information.</li>
+      <li>The app does not use the microphone or camera, does not read your contacts, and does not read or write Apple Health data.</li>
+    </ul>
+
+    <h2>Information stored on your iPhone</h2>
+    <p>To remember where you left off, the app saves the following locally on your device: your tree's growth state and seed code, tree settings, scene mode, season, time and weather choices, sound mixer levels, sleep timer choice, language, and other preferences. This information is not sent to us. It may be included in your own iCloud or computer backups, which are controlled by you and Apple.</p>
+
+    <h2>Location and Real Time weather (optional)</h2>
+    <p>In Real Time mode, the scene follows your device's clock and the current month. Matching the scene to the weather around you is optional, and the app first explains that local weather uses approximate location. iOS asks for permission only after you tap “Use local weather”.</p>
+    <ul>
+      <li>After you tap “Use local weather”, the app asks iOS for “While Using the App” access, with Precise Location off by default (approximate location). Before a weather request is made, the app further rounds the coordinate to a grid of roughly 5&nbsp;km.</li>
+      <li>The rounded coordinate is sent by Apple's WeatherKit framework to Apple to look up current conditions. Apple handles that request under its own <a href="https://www.apple.com/legal/privacy/">Privacy Policy</a>.</li>
+      <li>We never receive, store or share your location. No coordinates are saved by the app or sent to any system we operate.</li>
+      <li>The native WeatherKit layer caches the approximate coordinate in memory for up to 30 minutes. The app also stores the latest weather result, timestamp and Apple attribution URL in local storage for up to the refresh interval (60 minutes by default). Neither cache stores coordinates in local storage.</li>
+      <li>If you deny permission, Real Time mode still follows the time of day and the season; only the weather is not matched. You can change this at any time in iPhone Settings &gt; Privacy &amp; Security &gt; Location Services &gt; Tree of Moments.</li>
+    </ul>
+
+    <h2>Photos (optional)</h2>
+    <p>When you tap to save a picture of your tree, the app asks for permission to add photos to your library. This is add-only access: the app cannot see, read or change your existing photos. Nothing is requested until you choose to save.</p>
 
     <h2>Purchases</h2>
-    <p>Apple processes App Store payments and retains purchase records under Apple's privacy policy. The app receives only the purchased product identifier and verified entitlement status. We never receive or store your name, Apple ID credentials, billing address, or payment-card details.</p>
+    <p>Tree of Moments Premium is a one-time In-App Purchase processed entirely by Apple. Apple keeps the purchase record under its own privacy policy. The app only learns whether a verified Premium purchase exists for your Apple ID, so it can unlock Premium features. We never receive your name, Apple ID, email address, billing address or payment details.</p>
+
+    <h2>Apple services the app relies on</h2>
+    <p>The app uses Apple system frameworks including WeatherKit (optional local weather), StoreKit (purchases) and Photos (saving a picture). Cocos Creator is the third-party game engine used to build the app. Requests handled by Apple services are processed under Apple's privacy policy; the developer does not receive the location coordinates.</p>
 
     <h2>Children</h2>
-    <p>Tree of Moments is not directed to children under 13, and we do not knowingly collect personal information from children.</p>
+    <p>Tree of Moments is not directed to children under 13. We do not knowingly collect personal information from anyone, including children.</p>
+
+    <h2>Your choices and deleting your data</h2>
+    <p>Because we hold no data about you, there is nothing for us to access, export or delete on our side. To remove all data the app keeps on your iPhone, delete the app. You can turn off location or photo access at any time in iPhone Settings. A Premium purchase stays with your Apple ID and can be restored after reinstalling.</p>
 
     <h2>Changes to this policy</h2>
-    <p>We may update this policy when the app or legal requirements change. The effective date above identifies the current version.</p>
+    <p>If the app changes in a way that affects your privacy, we will update this page and its effective date. Earlier drafts of this page, published before the app's first release, described a third-party weather provider (QWeather) and advertising. Neither is part of the app: weather now comes only from Apple Weather, and the app contains no ads.</p>
 
     <h2>Contact</h2>
-    <p>Questions or privacy requests can be submitted publicly at <a href="https://github.com/adamqiu1001-cpu/tree-of-moments-legal/issues">github.com/adamqiu1001-cpu/tree-of-moments-legal/issues</a>.</p>
+    <p>Questions about privacy: <a href="mailto:adamqiu1001@gmail.com">adamqiu1001@gmail.com</a> (Yue Qiu).</p>
+
+    <p class="attribution">Weather data is provided by <a href="https://weatherkit.apple.com/legal-attribution.html" aria-label="Apple Weather - data sources and legal attribution"><span aria-hidden="true">&#xF8FF;</span>&nbsp;Weather</a> (Apple Weather). <a href="https://weatherkit.apple.com/legal-attribution.html">Data sources and legal attribution</a>.</p>
   </main>
-  <footer class="site-footer"><div class="site-footer__inner"><a href="terms.html">Terms of Use</a><a href="../zh/privacy.html">中文隐私政策</a></div></footer>
+  <footer class="site-footer">
+    <div class="site-footer__inner"><span>&copy; 2026 Yue Qiu</span><span><a href="terms.html">Terms of Use</a> &middot; <a href="support.html">Support</a> &middot; <a href="../zh/privacy.html" lang="zh-Hans">中文隐私政策</a></span></div>
+  </footer>
 </body>
 </html>
